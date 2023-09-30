@@ -4,9 +4,9 @@ import { Configuration, OpenAIApi } from "azure-openai";
 const openai = new OpenAIApi(
     new Configuration({
         azure: {
-            apiKey: "",
-            endpoint: "",
-            deploymentName: "",
+            apiKey: "", //Your API key goes here
+            endpoint: "", //Your endpoint goes here. It is like: "https://endpointname.openai.azure.com/"
+            deploymentName: "", //Your deployment name goes here. It is like "chatgpt"
         }
     }),
 );
